@@ -1,5 +1,5 @@
 <div id="outter_menu">
-	<table>
+	<table id="menu_fill">
 		<tr>
 			<td>
 				<div class="icon_menu">
@@ -17,7 +17,7 @@
 				</div>
 			</td>
 			<td>
-				<p class="text_menu">Home<p>
+				<p class="text_menu">Course Schedule<p>
 			</td>
 		</tr>
 		<tr>
@@ -27,7 +27,7 @@
 				</div>
 			</td>
 			<td>
-				<p class="text_menu">Home<p>
+				<p class="text_menu">Exam Schedule<p>
 			</td>
 		</tr>
 		<tr>
@@ -37,7 +37,7 @@
 				</div>
 			</td>
 			<td>
-				<p class="text_menu">Home<p>
+				<p class="text_menu">Attendance<p>
 			</td>
 		</tr>
 		<tr>
@@ -47,7 +47,7 @@
 				</div>
 			</td>
 			<td>
-				<p class="text_menu">Home<p>
+				<p class="text_menu">Score<p>
 			</td>
 		</tr>
 		

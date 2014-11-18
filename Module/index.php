@@ -8,7 +8,7 @@
 		<?php include("header.php"); ?>
 		<?php include("menu.php"); ?>
 		
-		<div style="width:auto; height:auto;background:yellow; top:50px; margin-left:300px; position:relative;">
+		<div style="width:auto; height:auto;background:yellow; top:50px; margin-left:200px; position:relative;">
 		ada...!!
 		</div>
 	</body>
