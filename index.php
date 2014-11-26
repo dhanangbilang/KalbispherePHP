@@ -13,7 +13,7 @@
 					</div>
 				</td>
 				<td>
-					<form action="Module/index.php" method="POST">
+					<form action="Module/signin.php" method="POST">
 						<div id="outter_form_login">
 							<table>
 								<tr>
@@ -24,14 +24,14 @@
 								<tr>
 									<td>
 										<div class="inputan" >
-											<input type="text" placeholder="Username" maxlength="10">
+											<input type="text" placeholder="Username" maxlength="10" name="username">
 										</div>
 									</td>
 								</tr>
 								<tr>
 									<td>
 										<div class="inputan">
-											<input type="password" placeholder="Password">
+											<input type="password" placeholder="Password" name="password">
 										</div>
 									</td>
 								</tr>
