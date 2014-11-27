@@ -1,3 +1,9 @@
+<?php
+	error_reporting(E_ALL & ~E_NOTICE);
+	$status = $_GET['status'];
+	$status_login = "Invalid Username and Password";
+?>
+
 <html>
 	<head>
 		<title>KALBIS System</title>
@@ -44,7 +50,13 @@
 								</tr>
 								<tr>
 									<td>
-										<p style="color:red;">Invalid Username and Password</p>
+										<?php
+											if($status == 1){
+												?>
+													<p style="color:white;"><?php echo $status_login ?></p>
+												<?php
+											}
+										?>
 									</td>
 								</tr>
 							</table>

@@ -14,7 +14,8 @@
 		echo $hasil['NIM'] . "<br>";
 		echo $hasil['Password'] . "<br>";
 		echo $hasil['Nama'] . "<br>";}
+		//header('Location: ../index.php');
 	else{
-		header('Location: ../index.php');
+		header('Location: ../index.php?status=1');
 	}
 ?>
