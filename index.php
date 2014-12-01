@@ -1,9 +1,3 @@
-<?php
-	error_reporting(E_ALL & ~E_NOTICE);
-	$status = $_GET['status'];
-	$status_login = "Invalid Username and Password";
-?>
-
 <html>
 	<head>
 		<title>KALBIS System</title>
@@ -48,22 +42,22 @@
 										</div>
 									</td>
 								</tr>
-								<tr>
-									<td>
-										<?php
-											if($status == 1){
-												?>
-													<p style="color:white;"><?php echo $status_login ?></p>
-												<?php
-											}
-										?>
-									</td>
-								</tr>
 							</table>
 						</div>
 					</form>
 				</td>
 			</tr>
 		</table>
+		<?php
+			if(isset($_COOKIE['fail'])){
+				?>
+					<div id="outer_info_signin">
+						<div id="info_signin">
+							<?php echo $_COOKIE['pesan']; ?>
+						</div>
+					</div>
+				<?php
+			}
+		?>
 	</body>
 </html>
