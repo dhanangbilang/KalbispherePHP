@@ -1,3 +1,4 @@
+<?php require_once("Module/session.php"); ?>
 <html>
 	<head>
 		<title>KALBIS System</title>
@@ -24,14 +25,14 @@
 								<tr>
 									<td>
 										<div class="inputan" >
-											<input type="text" placeholder="Username" maxlength="10" name="username">
+											<input type="text" placeholder="Username" maxlength="10" name="username" required>
 										</div>
 									</td>
 								</tr>
 								<tr>
 									<td>
 										<div class="inputan">
-											<input type="password" placeholder="Password" name="password">
+											<input type="password" placeholder="Password" name="password" required>
 										</div>
 									</td>
 								</tr>
@@ -48,16 +49,6 @@
 				</td>
 			</tr>
 		</table>
-		<?php
-			if(isset($_COOKIE['fail'])){
-				?>
-					<div id="outer_info_signin">
-						<div id="info_signin">
-							<?php echo $_COOKIE['pesan']; ?>
-						</div>
-					</div>
-				<?php
-			}
-		?>
+		<?php  echo message();	?>
 	</body>
 </html>

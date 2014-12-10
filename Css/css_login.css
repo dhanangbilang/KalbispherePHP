@@ -55,3 +55,14 @@ button{
 	width : 300px;
 	height : 40px;
 }
+
+#message{
+	color : rgba(100 100 100 1);
+	width : 300px;
+	font-style : normal;
+	margin : -20px 0 0 830px;
+	background : white;
+	padding : 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
