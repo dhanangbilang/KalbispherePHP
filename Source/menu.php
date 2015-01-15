@@ -2,7 +2,7 @@
 	<table id="menu_fill">
 		<tr>
 			<td>
-				<a href="#">
+				<a href="home.php">
 					<table class="menu_hover">
 						<tr>
 							<td class="icon_menu">
@@ -74,7 +74,7 @@
 		</tr>
 		<tr>
 			<td>
-				<a href="score.php">
+				<a href="#">
 					<table class="menu_hover">
 						<tr>
 							<td  class="icon_menu">

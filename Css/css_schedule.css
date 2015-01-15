@@ -1,0 +1,36 @@
+element {
+}
+
+.table {
+    border: 2px solid 
+	rgb(128, 195, 64);
+}
+
+
+.table-isi {
+    border: 2px solid white;
+    box-shadow: 0px 0px 2px 
+	rgb(175, 175, 175);
+}
+
+
+.isi-header {
+    font-family: Calibri;
+    font-size: 50px;
+    color: Black;
+	font-style: italic;
+}
+
+.isi {
+	text-decoration: none;
+    font-family: Calibri;
+    font-size: 16px;
+    color: rgb(0, 128, 0);
+}
+
+
+.isi-table {
+    font-family: Calibri;
+    font-size: 15px;
+    color: black;
+}

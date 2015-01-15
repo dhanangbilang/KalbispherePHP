@@ -18,7 +18,7 @@
 			//echo "Password Cocok.";
 			//$_SESSION["message"] = "Subject created.";
 			//redirect_to("../Source/Home.php");
-			header('Location: ../Source/Home.php');
+			header("Location: ../Source/Home.php?id=$username");
 		}else {
 			//echo "Password salah";
 			$_SESSION["message"] = "*Invalid username and password";

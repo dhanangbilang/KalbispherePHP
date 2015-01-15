@@ -12,20 +12,26 @@
 			</td>
 			<td>
 				<div id="profile">
-					<img src="../Images/2012100110.jpg" style="width:33px; height:40px; border-radius : 10px;"/>
+					
+					<img src="../Images/<?php $id_user = $_GET["id"]; echo $id_user;?>.jpg" style="width:33px; height:40px; border-radius : 10px;"/>
 				</div>
 			</td>
 		</tr>
 	</table>
-	<div id="outer_profile">
+	<div id="outer_profile" style="display:none;">
 			<table>
 				<tr>
 					<td colspan="3">
 						<div style="margin-left : 80px; margin-bottom : 20px;">
-							<img src="../Images/2012100110.jpg" style="width:130px; height:150px; border-radius : 5px;"/>
+							<img src="../Images/<?php echo $id_user;?>.jpg" style="width:130px; height:150px; border-radius : 5px;"/>
 						</div>
 					</td>
 				</tr>
+				<?php
+					$sql = "SELECT * FROM ..................[mahasiswa]";
+					$result  = mysqli_query($koneksi, $sql);
+					$hasil = mysqli_fetch_assoc($result);
+				?>
 				<tr>
 					<td>
 						Student ID
