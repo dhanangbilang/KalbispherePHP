@@ -28,7 +28,7 @@
 					</td>
 				</tr>
 				<?php
-					$sql = "SELECT m.Nim, m.Nama, j.Nama_Jur, m.Tahun, m.Tempat_Lahir, m.Tgl_Lahir, m.Alamat, m.Kota, m.JK, m.Agama FROM mahasiswa m, jurusan j WHERE m.Kode_Jur = j.Kode_Jur and m.Nim = '2012100110'";
+					$sql = "SELECT * FROM ..................[mahasiswa]";
 					$result  = mysqli_query($koneksi, $sql);
 					$hasil = mysqli_fetch_assoc($result);
 				?>
@@ -40,7 +40,7 @@
 						:
 					</td>
 					<td>
-					<?php echo $hasil['Nim']; ?>
+						2012100110
 					</td>
 				</tr>
 				<tr>
@@ -51,7 +51,7 @@
 						:
 					</td>
 					<td>
-						<?php echo $hasil['Nama']; ?>
+						Dhanang Fabiannanda Prasetyo Aji
 					</td>
 				</tr>
 				<tr>
@@ -62,7 +62,7 @@
 						:
 					</td>
 					<td>
-						<?php echo $hasil['Nama_Jur']; ?>
+						Informatika (S1)
 					</td>
 				</tr>
 				<tr>
@@ -73,7 +73,7 @@
 						:
 					</td>
 					<td>
-						<?php echo $hasil['Tahun']; ?>
+						2012
 					</td>
 				</tr>
 				<tr>
@@ -84,7 +84,7 @@
 						:
 					</td>
 					<td>
-						<?php echo $hasil['Tempat_Lahir']; ?>
+						Jember
 					</td>
 				</tr>
 				<tr>
@@ -95,7 +95,7 @@
 						:
 					</td>
 					<td>
-						<?php echo $hasil['Tgl_Lahir']; ?>
+						28 February 1994
 					</td>
 				</tr>
 				<tr>
@@ -106,7 +106,7 @@
 						:
 					</td>
 					<td>
-						<?php echo $hasil['Alamat']; ?>
+						Bekasi Timur Regency Blok H21 No38 RT09/15
 					</td>
 				</tr>
 				<tr>
@@ -117,7 +117,7 @@
 						:
 					</td>
 					<td>
-						<?php echo $hasil['Kota']; ?>
+						Bekasi
 					</td>
 				</tr>
 				<tr>
@@ -128,7 +128,7 @@
 						:
 					</td>
 					<td>
-						<?php echo $hasil['JK']; ?>
+						Male
 					</td>
 				</tr>
 				<tr>
@@ -139,7 +139,7 @@
 						:
 					</td>
 					<td>
-						<?php echo $hasil['Agama']; ?>
+						Islam
 					</td>
 				</tr>				
 			</table>
