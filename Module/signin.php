@@ -8,17 +8,23 @@
 	//echo $username;
 	//echo $password;
 	
-	$sql = "SELECT * FROM msuser WHERE NIM = '$username'";
+	$pass = $password;
+	$format	  = "$2a$"; // BLOWFISH
+	$hash	  = "HaloHaloHaloHaloHalo22"; // 22 karakter
+	$salt	  = $format . $hash;
+	$newPass = crypt($pass, $salt);
+	
+	$sql = "SELECT * FROM msuser WHERE NIM = $username";
 	$result  = mysqli_query($koneksi, $sql);
 	$hasil = mysqli_fetch_assoc($result);
 	
 	if(mysqli_num_rows($result)>0){
 		//$pw = pass_crypt($password); //encrypsi password
-		if($password == $hasil['Password']){
+		if($newPass == $hasil['Password']){
 			//echo "Password Cocok.";
 			//$_SESSION["message"] = "Subject created.";
 			//redirect_to("../Source/Home.php");
-			header("Location: ../Source/Home.php?id=$username");
+			header("Location: ../Source/home.php?id=$username");
 		}else {
 			//echo "Password salah";
 			$_SESSION["message"] = "*Invalid username and password";
