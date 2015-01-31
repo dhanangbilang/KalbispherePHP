@@ -1,9 +1,0 @@
-Options +FollowSymLinks -MultiViews
-
-RewriteEngine On
-RewriteEngine /kalbispherePHP/
-
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-
-RewriteRule ^user/([^/]+)$ home.php?name=$1 [NC,L]
