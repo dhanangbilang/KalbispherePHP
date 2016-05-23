@@ -2,7 +2,7 @@
 	<table id="menu_fill">
 		<tr>
 			<td>
-				<a href="home.php">
+				<a href="home.php?id=<?php echo urldecode($id_user); ?>">
 					<table class="menu_hover">
 						<tr>
 							<td class="icon_menu">
@@ -20,7 +20,7 @@
 		</tr>
 		<tr>
 			<td>
-				<a href="schedule.php">
+				<a href="schedule.php?id=<?php echo urldecode($id_user); ?>">
 					<table class="menu_hover">
 						<tr>
 							<td  class="icon_menu">
@@ -38,7 +38,7 @@
 		</tr>
 		<tr>
 			<td>
-				<a href="exam.php">
+				<a href="#">
 					<table class="menu_hover">
 						<tr>
 							<td  class="icon_menu">
@@ -56,7 +56,7 @@
 		</tr>
 		<tr>
 			<td>
-				<a href="attendance.php">
+				<a href="#">
 					<table class="menu_hover">
 						<tr>
 							<td  class="icon_menu">

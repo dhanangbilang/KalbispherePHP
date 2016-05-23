@@ -1,4 +1,14 @@
-element {
+#outer_course{
+	width: 1166px;
+	height : 768px;
+	background : white;
+	margin-left : 200px;
+}
+
+#tabelnya{
+	margin-top : 60px;
+	margin-left : 85px;
+	position : absolute;
 }
 
 .table {

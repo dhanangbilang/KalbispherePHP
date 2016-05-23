@@ -3,7 +3,7 @@
 	$host = "localhost";
 	$user = "root";
 	$pass = "";
-	$name = "kalbispherephp";
+	$name = "kalbisphere";
 	$koneksi = mysqli_connect($host, $user, $pass, $name);
 	// Step 1b. Periksa Apakah Koneksi Berhasil
 	if(mysqli_connect_errno()) {

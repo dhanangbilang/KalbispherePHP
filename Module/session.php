@@ -12,4 +12,17 @@
 					return $output;
 				}
 	}
+	
+	function info(){
+		if(isset($_SESSION["info"])){
+					$output = "<div id=\"message\">";
+					$output .= htmlentities($_SESSION["info"]);
+					$output .= "</div>";
+					
+					// Clear message after use
+					$_SESSION["message"] = null;
+					return $output;
+				}
+	}
+	
 ?>

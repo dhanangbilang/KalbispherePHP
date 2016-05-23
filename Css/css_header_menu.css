@@ -1,5 +1,6 @@
 body{
 	margin : 0px;
+	/*overflow:hidden;*/
 }
 /*------------------------------------- Header*/
 #outter_header{
@@ -43,7 +44,7 @@ body{
 #outter_menu{
 	width : 200px;
 	height : 100%;
-	background : #fff;
+	background : #FFFFCC;
 	position : fixed;
 	margin-top : 50px;
 }
@@ -71,4 +72,25 @@ body{
 
 .menu_hover:hover{
 	background : #BE1E2D;
+}
+
+
+/*-------------------------------------- form Admin*/
+
+#outer_form_admin{
+	width: 1166px;
+	height : 768px;
+	margin-left : 200px;
+}
+
+#form_input_msg{
+	margin-top : 50px;
+}
+
+#msg_fill{
+	width : 1005px;
+	height : 20px;
+	resize:none;
+    overflow:auto;
+	
 }

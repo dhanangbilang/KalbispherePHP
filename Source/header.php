@@ -12,8 +12,8 @@
 			</td>
 			<td>
 				<div id="profile">
-					
-					<img src="../Images/<?php $id_user = $_GET["id"]; echo $id_user;?>.jpg" style="width:33px; height:40px; border-radius : 10px;"/>
+					<?php $id_user = $_GET["id"]; ?>
+					<img src="http://kalbisphere.kalbis.ac.id/Kalbiser/<?php echo urldecode($id_user);?>.jpg" style="width:33px; height:40px; border-radius : 10px; cursor:pointer;"/>
 				</div>
 			</td>
 		</tr>
@@ -23,12 +23,12 @@
 				<tr>
 					<td colspan="3">
 						<div style="margin-left : 80px; margin-bottom : 20px;">
-							<img src="../Images/<?php echo $id_user;?>.jpg" style="width:130px; height:150px; border-radius : 5px;"/>
+							<img src="http://kalbisphere.kalbis.ac.id/Kalbiser/<?php echo urldecode($id_user);?>.jpg" style="width:130px; height:150px; border-radius : 5px;"/>
 						</div>
 					</td>
 				</tr>
 				<?php
-					$sql = "SELECT * FROM ..................[mahasiswa]";
+					$sql = "SELECT m.Nim, m.Nama, j.Nama_Jur, m.Tahun, m.Tempat_Lahir, m.Tgl_Lahir, m.Alamat, m.Kota, m.JK, m.Agama FROM mahasiswa m, jurusan j WHERE m.Kode_Jur = j.Kode_Jur and m.Nim = '$id_user'";
 					$result  = mysqli_query($koneksi, $sql);
 					$hasil = mysqli_fetch_assoc($result);
 				?>
@@ -40,7 +40,7 @@
 						:
 					</td>
 					<td>
-						2012100110
+						<?php echo $hasil['Nim'];?>
 					</td>
 				</tr>
 				<tr>
@@ -51,7 +51,7 @@
 						:
 					</td>
 					<td>
-						Dhanang Fabiannanda Prasetyo Aji
+						<?php echo $hasil['Nama'];?>
 					</td>
 				</tr>
 				<tr>
@@ -62,7 +62,7 @@
 						:
 					</td>
 					<td>
-						Informatika (S1)
+						<?php echo $hasil['Nama_Jur'];?>
 					</td>
 				</tr>
 				<tr>
@@ -73,7 +73,7 @@
 						:
 					</td>
 					<td>
-						2012
+						<?php echo $hasil['Tahun'];?>
 					</td>
 				</tr>
 				<tr>
@@ -84,7 +84,7 @@
 						:
 					</td>
 					<td>
-						Jember
+						<?php echo $hasil['Tempat_Lahir'];?>
 					</td>
 				</tr>
 				<tr>
@@ -95,7 +95,7 @@
 						:
 					</td>
 					<td>
-						28 February 1994
+						<?php echo $hasil['Tgl_Lahir'];?>
 					</td>
 				</tr>
 				<tr>
@@ -106,7 +106,7 @@
 						:
 					</td>
 					<td>
-						Bekasi Timur Regency Blok H21 No38 RT09/15
+						<?php echo $hasil['Alamat'];?>
 					</td>
 				</tr>
 				<tr>
@@ -117,7 +117,7 @@
 						:
 					</td>
 					<td>
-						Bekasi
+						<?php echo $hasil['Kota'];?>
 					</td>
 				</tr>
 				<tr>
@@ -128,7 +128,7 @@
 						:
 					</td>
 					<td>
-						Male
+						<?php echo $hasil['JK'];?>
 					</td>
 				</tr>
 				<tr>
@@ -139,7 +139,7 @@
 						:
 					</td>
 					<td>
-						Islam
+						<?php echo $hasil['Agama'];?>
 					</td>
 				</tr>				
 			</table>
